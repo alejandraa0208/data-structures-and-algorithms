@@ -25,3 +25,5 @@ To run your tests
 ### Table of Contents
 
 [Reverse an Array](./javascript2/README.md)
+
+[Insert Shift Array](./javascript/array-insert-shift/README.md)
