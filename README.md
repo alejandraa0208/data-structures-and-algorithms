@@ -27,3 +27,5 @@ To run your tests
 [Reverse an Array](./javascript2/README.md)
 
 [Insert Shift Array](./javascript/array-insert-shift/README.md)
+
+[Binary Search in an Array](./javascript/array-binary-search/README.md)
