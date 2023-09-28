@@ -31,3 +31,5 @@ To run your tests
 [Binary Search in an Array](./javascript/array-binary-search/README.md)
 
 [Linked List Kth](./javascript/linked-list-kth/README.md)
+
+[Linked List Zip](./javascript/linked-list-zip/README.md)
