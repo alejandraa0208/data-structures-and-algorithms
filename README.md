@@ -33,3 +33,7 @@ To run your tests
 [Linked List Kth](./javascript/linked-list-kth/README.md)
 
 [Linked List Zip](./javascript/linked-list-zip/README.md)
+
+[Stack and Queue](./javascript/stack-and-queue/README.md)
+
+[Stack Queue Pseudo](./javascript/stack-queue-psuedo/README.md)
