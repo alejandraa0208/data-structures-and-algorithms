@@ -37,3 +37,5 @@ To run your tests
 [Stack and Queue](./javascript/stack-and-queue/README.md)
 
 [Stack Queue Pseudo](./javascript/stack-queue-psuedo/README.md)
+
+[Stack Queue Animal Shelter](./javascript/stack-queue-animal-shelter/README.md)
