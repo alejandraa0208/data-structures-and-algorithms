@@ -1,4 +1,4 @@
-const { PseudoQueue, Stack } = require('./stack-queue-psuedo');
+const { PseudoQueue, Stack } = require('./stack-queue-pseudo'); // Assuming your implementation is in a separate file
 
 describe('PseudoQueue', () => {
   let pseudoQueue;
