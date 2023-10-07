@@ -17,31 +17,38 @@ class LinkedList {
     this.head = newNode;
   }
 
-  // Find the value of the kth node from the end of the linked list
-  kthFromEnd(k) {
-    if (k <= 0) {
-      return null;
-    }
-
-    let firstPointer = this.head;
-    let secondPointer = this.head;
-
-    // Move firstPointer k nodes ahead
-    for (let i = 0; i < k; i++) {
-      if (firstPointer === null) {
-        return null; // Out of bounds
+  includes(value) {
+    let current = this.head;
+    while (current) {
+      if (current.value === value) {
+        return true;
       }
-      firstPointer = firstPointer.next;
+      current = current.next;
     }
+    return false;
+  }
 
-    // Move both pointers until firstPointer reaches the end
-    while (firstPointer !== null) {
-      firstPointer = firstPointer.next;
-      secondPointer = secondPointer.next;
+  // Returns a string representing all the values in the Linked List.
+  toString() {
+    let current = this.head;
+    let result = '';
+    while (current) {
+      result += `{ ${current.value} } -> `;
+      current = current.next;
     }
-
-    return secondPointer ? secondPointer.value : null;
+    return result + 'NULL';
   }
 }
 
-module.exports = LinkedList; // Export the LinkedList class
+const survivalRope = new LinkedList();
+survivalRope.insert('sandwich');
+survivalRope.insert('first aid');
+survivalRope.insert('blow gun');
+survivalRope.insert('sunscreen');
+survivalRope.insert('paddle');
+
+console.log(survivalRope.toString()); // "{ paddle } -> { sunscreen } -> { blow gun } -> { first aid } -> { sandwich } -> NULL"
+console.log(survivalRope.includes('blow gun')); // true
+console.log(survivalRope.includes('water bottle')); // false
+
+module.exports = LinkedList;

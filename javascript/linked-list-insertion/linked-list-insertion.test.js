@@ -1,49 +1,84 @@
 const LinkedList = require('./index'); // Adjust the import path as needed
 
-describe('Testing the Linked List class', () => {
+describe('LinkedList', () => {
+  describe('append', () => {
+    it('should append a new node to an empty list', () => {
+      const list = new LinkedList();
+      list.append(1);
 
-  test('Can successfully add a node to the end of the linked list', () => {
-    const linkedList = new LinkedList();
-    linkedList.append('first');
-    expect(linkedList.toString()).toBe('{ first } -> NULL');
+      expect(list.head.value).toBe(1);
+      expect(list.head.next).toBeNull();
+    });
+
+    it('should append a new node to the end of a non-empty list', () => {
+      const list = new LinkedList();
+      list.append(1);
+      list.append(2);
+      list.append(3);
+
+      expect(list.head.value).toBe(1);
+      expect(list.head.next.value).toBe(2);
+      expect(list.head.next.next.value).toBe(3);
+    });
   });
 
-  test('Can successfully add multiple nodes to the end of a linked list', () => {
-    const linkedList = new LinkedList();
-    linkedList.append('first');
-    linkedList.append('second');
-    linkedList.append('third');
-    expect(linkedList.toString()).toBe('{ first } -> { second } -> { third } -> NULL');
+  describe('insertBefore', () => {
+    it('should insert a new node before the first occurrence of a value', () => {
+      const list = new LinkedList();
+      list.append(1);
+      list.append(2);
+      list.append(3);
+
+      list.insertBefore(2, 4);
+
+      expect(list.head.value).toBe(1);
+      expect(list.head.next.value).toBe(4);
+      expect(list.head.next.next.value).toBe(2);
+      expect(list.head.next.next.next.value).toBe(3);
+    });
+
+    it('should insert a new node at the beginning of the list', () => {
+      const list = new LinkedList();
+      list.append(1);
+      list.append(2);
+
+      list.insertBefore(1, 0);
+
+      expect(list.head.value).toBe(0);
+      expect(list.head.next.value).toBe(1);
+      expect(list.head.next.next.value).toBe(2);
+    });
+
+    it('should do nothing if the list is empty', () => {
+      const list = new LinkedList();
+
+      list.insertBefore(1, 0);
+
+      expect(list.head).toBeNull();
+    });
   });
 
-  test('Can successfully insert a node before a node located in the middle of a linked list', () => {
-    const linkedList = new LinkedList();
-    linkedList.append('first');
-    linkedList.append('third');
-    linkedList.insertBefore('third', 'second');
-    expect(linkedList.toString()).toBe('{ first } -> { second } -> { third } -> NULL');
-  });
+  describe('insertAfter', () => {
+    it('should insert a new node after the first occurrence of a value', () => {
+      const list = new LinkedList();
+      list.append(1);
+      list.append(2);
+      list.append(3);
 
-  test('Can successfully insert a node before the first node of a linked list', () => {
-    const linkedList = new LinkedList();
-    linkedList.append('first');
-    linkedList.insertBefore('first', 'newFirst');
-    expect(linkedList.toString()).toBe('{ newFirst } -> { first } -> NULL');
-  });
+      list.insertAfter(2, 4);
 
-  test('Can successfully insert a node after a node in the middle of the linked list', () => {
-    const linkedList = new LinkedList();
-    linkedList.append('first');
-    linkedList.append('second');
-    linkedList.insertAfter('first', 'newNode');
-    expect(linkedList.toString()).toBe('{ first } -> { newNode } -> { second } -> NULL');
-  });
+      expect(list.head.value).toBe(1);
+      expect(list.head.next.value).toBe(2);
+      expect(list.head.next.next.value).toBe(4);
+      expect(list.head.next.next.next.value).toBe(3);
+    });
 
-  test('Can successfully insert a node after the last node of the linked list', () => {
-    const linkedList = new LinkedList();
-    linkedList.append('first');
-    linkedList.insertAfter('first', 'second');
-    expect(linkedList.toString()).toBe('{ first } -> { second } -> NULL');
-  });
+    it('should do nothing if the list is empty', () => {
+      const list = new LinkedList();
 
+      list.insertAfter(1, 0);
+
+      expect(list.head).toBeNull();
+    });
+  });
 });
