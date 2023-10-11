@@ -39,3 +39,13 @@ To run your tests
 [Stack Queue Pseudo](./javascript/stack-queue-psuedo/README.md)
 
 [Stack Queue Animal Shelter](./javascript/stack-queue-animal-shelter/README.md)
+
+[Stack Queue Brackets](./javascript/stack-queue-brackets/README.md)
+
+[Trees](./javascript/trees/README.md)
+
+[Tree Max](./javascript/tree-max/README.md)
+
+[Tree Breadth First](./javascript/tree-breadth-first/README.md)
+
+[Tree Fizz Buzz](./javascript/tree-fizz-buzz/README.md)
