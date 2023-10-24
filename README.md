@@ -49,3 +49,5 @@ To run your tests
 [Tree Breadth First](./javascript/tree-breadth-first/README.md)
 
 [Tree Fizz Buzz](./javascript/tree-fizz-buzz/README.md)
+
+[Sorting-Insertion](./javascript/sorting/insertion/README.md)
