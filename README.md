@@ -51,3 +51,9 @@ To run your tests
 [Tree Fizz Buzz](./javascript/tree-fizz-buzz/README.md)
 
 [Sorting-Insertion](./javascript/sorting/insertion/README.md)
+
+[Sorting-Merge](./javascript/sorting/merge/README.md)
+
+[Sorting-Comparison](./javascript/sorting/comparison/README.md)
+
+[Hash Tables](./javascript/hash-tables/README.md)
