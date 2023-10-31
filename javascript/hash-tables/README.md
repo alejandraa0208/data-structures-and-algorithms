@@ -57,4 +57,3 @@ Handling Collisions: In cases where multiple keys hash to the same index, we use
 Time Complexity: The time complexity of the set and get operations is typically O(1) on average when the hash function is well-distributed and collisions are minimized. However, in the worst case (when all keys hash to the same index), the time complexity can be O(n), where n is the number of key-value pairs. This worst-case scenario is rare and can be mitigated with a good hash function and proper resizing strategies.
 
 Space Complexity: The space complexity of the hash table is O(n), where n is the number of key-value pairs stored in the table. Each key-value pair consumes space in the array, and the space complexity grows linearly with the number of stored elements.
-
