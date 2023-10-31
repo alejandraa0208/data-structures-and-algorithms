@@ -57,3 +57,5 @@ To run your tests
 [Sorting-Comparison](./javascript/sorting/comparison/README.md)
 
 [Hash Tables](./javascript/hash-tables/README.md)
+
+[Hash Map](./javascript/hashmap/README.md)
