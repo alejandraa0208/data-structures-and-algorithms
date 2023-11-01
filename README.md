@@ -59,3 +59,5 @@ To run your tests
 [Hash Tables](./javascript/hash-tables/README.md)
 
 [Hash Map](./javascript/hashmap/README.md)
+
+[Tree Intersection](./javascript/tree-intersection/README.md)
