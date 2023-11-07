@@ -62,4 +62,4 @@ To run your tests
 
 [Tree Intersection](./javascript/tree-intersection/README.md)
 
-[Hashmap Left Join] (./)
+[Hashmap Left Join] (./javascript/hashmap-left-join/README.md)
