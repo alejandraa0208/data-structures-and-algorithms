@@ -62,4 +62,10 @@ To run your tests
 
 [Tree Intersection](./javascript/tree-intersection/README.md)
 
-[Hashmap Left Join] (./javascript/hashmap-left-join/README.md)
+[Hash Map Left Join](./javascript/hashmap-left-join/README.md)
+
+[Graph Beadth First](./javascript/graph-breadth-first/README.md)
+
+[Graph Business Trip](./javascript/graph-business-trip/README.md)
+
+[Graph Depth First](./javascript/graph-depth-first/README.md)
